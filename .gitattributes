@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# ForceDelete.bat is GBK-encoded and requires CRLF line endings.
+# Store it as binary so git never normalizes CRLF to LF.
+*.bat binary
